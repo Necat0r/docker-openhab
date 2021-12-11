@@ -1,4 +1,4 @@
-FROM openhab/openhab:2.5.3-amd64-debian
+FROM openhab/openhab:2.5.7
 
 # Fix sound
 RUN sed -i 's/  adduser openhab gpio/  adduser openhab gpio\n  adduser openhab audio/g' /entrypoint.sh
